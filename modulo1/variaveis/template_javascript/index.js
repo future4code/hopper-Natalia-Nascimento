@@ -24,9 +24,40 @@
 //a = c
 //b = a
 //c = b
+//somar
+//const soma = 3 + 4
+//console.log(soma)
+//const multi = 3 * 4
+//console.log(multi)
+//const numero1 = 3
+//const numero2 = 4
 
+//console.log (numero1 === numero2)
 
+//excercio3
+//const a = true, b = false , c = true
+//console.log( a && b)
+//console.log( b && c)
 
+//exercio4
+//const a = true, b = false , c = false
+//console.log( a || b)
+//console.log( b || c)
+
+//const a = true, b = false , c = false
+//console.log( a || b)
+//console.log( b || c)
+
+//exercercio5
+const nome = "Natalia"
+const anoNascimento = 1990
+const anoAtual = 2022
+const idade2 = anoAtual - anoNascimento
+
+console.log("Nome:", nome)
+console.log("idade:" , idade2)
+console.log(idade2>= 18)
+console.log(2050 - anoNascimento)
 
 
 
