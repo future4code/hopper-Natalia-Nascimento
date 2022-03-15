@@ -1,0 +1,32 @@
+Exercícios de fixação do conhecimento
+
+OS 07 Passos essesncias na Programação
+
+Passo 1
+
+Ter Atenção no Enunciado: Lerr com muita atenção o desafio que é feito, seja pela labenu ou em qualquer lugar
+
+Passo 2 
+
+Retirar informaçoes Relevantes: Retirar as informaçoes importantes que seram usadas para o usuario e na escrita do codigo
+
+Passo 3
+
+Pensar Entradas e Saidas: Criar uma expectativa de entrada e quais sao suas saidas. Um exemplo selecionando a idade ou sexo para definir o que o usuario deseja
+
+Passo 4
+
+Fazer um esquema visual: Como ainda nao temos o codigo definifo vamos criando fluxograma e topicos
+
+Passo 5 
+
+Criar Codigo feito: Coloque no papel todas as soluçoes ou ate mesmo vai comentando no Vs code enquanto vai criando
+
+Passo 6
+
+Testar: Força-Bruta : Mostrar a linguagem desejada 
+
+Passo 7 
+
+Refatorar: coloque nome faceis nas funcoes e nas variavesis, deixe separado as funcoes e os elementos e comece sempre por planejamentop e passo a passo
+
