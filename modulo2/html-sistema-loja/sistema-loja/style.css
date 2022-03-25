@@ -1,0 +1,21 @@
+#cor-rosa {
+    background-color:pink;
+    color: blueviolet;
+
+}
+
+footer{
+    position: absolute;
+    height: 100%;
+    width: 250px; 
+    bottom: -700px;
+}
+
+.cor-amarelo{
+    background-color: rgb(120, 138, 17);
+}
+
+#cor-roxo{
+    background-color: brown;
+    color: blue;
+}

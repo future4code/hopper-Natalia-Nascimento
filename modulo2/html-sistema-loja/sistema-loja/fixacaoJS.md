@@ -1,6 +1,8 @@
-function calculaSalario(qtdeCarrosVendidos, valorTotalVendas){
-    let comissaoDasVendas = qtdeCarrosVendido *100 + valorTotalVendas * 0,05
-    let salarioComComissao = 2000 + comissaoDasVendas
+function calculaPrecoTotal(quantidade) {
+ let valor = 1.3
 
-    return salarioComComissao
-}
+  if (quantidade >=12){
+    valor = 1
+  }
+
+    return quantidade*valor 
