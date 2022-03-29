@@ -143,3 +143,12 @@ td button {
 td button:hover{
     background-color:#8a877e ;
 }
+
+li{
+    display: list-item;
+    list-style-position: inside;
+}
+
+input:active{
+    background-color: aquamarine;
+}
