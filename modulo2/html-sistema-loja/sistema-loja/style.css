@@ -1,6 +1,6 @@
 #cor-rosa {
-    background-color:pink;
-    color: blueviolet;
+    /* background-color:rgb(192, 255, 211);  */
+    color: rgb(226, 43, 52);
 
 }
 
@@ -12,10 +12,14 @@ footer{
 }
 
 .cor-amarelo{
-    background-color: rgb(120, 138, 17);
+    background-color: rgb(17, 138, 132);
 }
 
 #cor-roxo{
-    background-color: brown;
+    background-color: rgb(165, 42, 149);
+    color: blue;
+}
+
+#cor-azul{
     color: blue;
 }
