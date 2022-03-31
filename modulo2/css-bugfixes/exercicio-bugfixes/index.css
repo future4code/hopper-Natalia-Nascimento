@@ -1,0 +1,154 @@
+/** 
+  *
+  *  ESTILOS GERAIS 
+  *
+  **/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    background-color: #fe7e02;
+    padding: 10px 5px 10px 5px;
+    color: white;
+    text-align: center;
+}
+
+input {
+    height: 20px;
+    width: 500px;
+    border: none;
+    border-bottom: 2px solid rgb(7, 5, 5);
+}
+
+button:focus {
+    color: white;
+}
+
+img {
+    width: 50px;
+}
+
+div>p:first-child {
+    display: inline;
+}
+
+div img {
+    background: white;
+}
+
+.botao-amarelo {
+    margin: 100px 100px 100px 500px;
+    background-color: #ffaf43;
+    width: 15vw;
+    height: 5vh;
+    display:block;
+    border-radius: 5px;
+    font-size: 20px;
+    color: white;
+    position:absolute
+}
+
+.botao-amarelo:hover {
+    background-color: #c44f00;
+}
+
+.container {
+    font-family: Arial, Helvetica, sans-serif;
+    height: 285px;
+    padding: 80px ;
+}
+
+.icone {
+    margin: 10px 10px 10px 10px;
+    width: 20px;
+
+}
+
+
+/** 
+  *
+  *  ESTILOS HOME 
+  *
+  **/
+
+#container-de-descricao {
+    background-color: #2274a5;
+    color: white;
+}
+
+#container-de-descricao>ol {
+    padding: 15px 0px;
+}
+
+#container-para-comprar {
+    background-color: #e7eb90;
+}
+
+#container-para-comprar>p {
+    color: #c44f00;
+    padding: 100px 0;
+    font-size: 60px;
+}
+
+
+/**
+  *
+  *  ESTILOS COMPRAR 
+  *
+  **/
+
+div:nth-child(2),
+div:last-child {
+    text-align: center;
+}
+
+table {
+    width: 85%;
+    margin: 200px;
+    margin-top: 09px;
+    margin-bottom: 15px;
+}
+
+td button {
+    background-color: #fadf63;
+    width: 150px;
+    height: 30px;
+    border-radius: 5px;
+    color: black;
+}
+
+.container-do-search {
+    margin-top: 20px;
+    height: 100px;
+}
+
+
+#back-button {
+    background-color: white;
+    width: 100px;
+    height: 20px;
+    border: 1px solid black;
+    border-radius: 5px;
+    font-size: 10px;
+    color: black;
+}
+
+#back-button:hover {
+    background-color: #635a3d
+}
+
+td button:hover{
+    background-color:#8a877e ;
+}
+
+li{
+    display: list-item;
+    list-style-position: inside;
+}
+
+input:active{
+    background-color: aquamarine;
+}

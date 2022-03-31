@@ -1,0 +1,21 @@
+#cor-rosa{
+    background-color: pink;
+    color: black;
+    background-image: url(./img/Coracao-Rosa.png)
+   
+   
+}
+
+footer{
+    position: absolute;
+    height: 100%;
+    width: 250px; 
+    bottom: -900px;
+}
+
+#social-media{
+    background-color: antiquewhite;
+    color:brown
+    width: 250px; 
+
+}
