@@ -1,0 +1,54 @@
+.itens{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  margin-top: 60px;
+  background-color: #f2d0e0;
+ 
+ 
+}
+
+.confeitaria{
+  display: flex;
+  justify-content: space-between;
+  height: 60px;
+  align-items: center; 
+  padding: 0 25px;
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  background-color: mediumvioletred;
+
+}
+
+
+button{
+  margin: 0;
+  border: 1px solid;
+
+ 
+
+
+}
+
+footer{
+  background-color: mediumvioletred;
+
+}
+
+*{
+  margin: 0;
+  padding: 0;
+ 
+}
+
+.bolos{
+  margin-top: 10px;
+  display: grid;
+  grid-template-columns: 2fr 2fr 2fr;
+  grid-template-rows: 1fr 1fr;
+ 
+ 
+}
+
+
