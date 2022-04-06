@@ -1,0 +1,81 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    height: 10vh;
+    font-size: 4vh;
+    border-bottom: 3px solid rgb(2, 2, 2);
+    text-align: end;
+    position:sticky;
+    background-color:orange;
+    width:50;
+
+}
+
+
+/* header{
+    background-color: orange;
+} */
+.pesquisa{
+    background-color: gainsboro;
+    position: absolute;
+    right: 5%;
+    margin-top: -5px;
+}
+
+
+.media1{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    row-gap: 20px;
+    column-gap: 20px;
+    margin:20px
+
+
+
+}
+
+.media2{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    row-gap: 20px;
+    column-gap: 20px;
+    margin:20px
+
+
+
+}
+
+.media3{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    row-gap: 20px;
+    column-gap: 20px;
+    margin:20px
+
+
+
+}
+
+.media4{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    row-gap: 20px;
+    column-gap: 20px;
+    margin:20px
+
+
+
+}
+
+footer{
+    color: blue;
+    position: absolute;
+    height: 100%;
+    width: 250px; 
+    bottom: -700px;
+}
