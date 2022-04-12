@@ -79,3 +79,23 @@ footer{
     width: 250px; 
     bottom: -700px;
 }
+
+@media screen and(min-device-width:500px)and  (max-device-width:700px) {
+    header {
+        display: block;
+    }
+
+    .media1 {
+        
+        background-color: rgb(255, 0, 76);
+        color: blueviolet;
+        display:block;
+        height: 50vh;
+        width: 25vw;
+        align-items: center;
+        flex-wrap: wrap;
+       
+
+    }
+    
+}
