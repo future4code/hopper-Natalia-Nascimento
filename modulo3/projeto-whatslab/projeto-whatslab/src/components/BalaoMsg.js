@@ -38,4 +38,4 @@ class BalaoMsg extends React.Component{
 
 }
 
-export default BalaoMsg
+export default BalaoMsg     
