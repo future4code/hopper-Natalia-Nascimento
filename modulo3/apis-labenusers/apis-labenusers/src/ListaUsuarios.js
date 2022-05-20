@@ -20,7 +20,7 @@ class ListaUsuarios extends React.Component {
             "https://us-central1-labenu-apis.cloudfunctions.net/labenusers/users",
             {
               headers: {
-                Authorization: "natalia-amaral-hopper",
+                Authorization: "natalia-nascimento-hopper",
               },
             }
           )
@@ -38,7 +38,7 @@ class ListaUsuarios extends React.Component {
             `https://us-central1-labenu-apis.cloudfunctions.net/labenusers/users/${idDoUsuario}`,
             {
               headers: {
-                Authorization: "natalia-amaral-hopper",
+                Authorization: "natalia-nascimento-hopper",
               },
             }
           )
