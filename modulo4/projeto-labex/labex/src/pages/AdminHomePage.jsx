@@ -1,16 +1,22 @@
-const AdminHomePage = () => {
+import React from 'react'
+import { useNavigate } from 'react-router-dom'
+import { useProtectedPage } from '../hooks/useProtectedPage'
+import {BsFillHouseFill} from "react-icons/bs"
 
-    return(
-        <div>
-            <h2>Página administrativa</h2>
-            <footer>
-                 &copy; 2022 All rights reserved.
-                <p>Projeto Desenvolvido por Natália Amorim Pereira do Nascimento ♥</p>
-            </footer>
-        </div>
-    )
+const  AdminHomePage = () => {
+  const navigate = useNavigate();
+  useProtectedPage()
+
+  return (
+    <>
+      <h1>Painel Administrativo</h1>
+      <div>
+        <button onClick={() => navigate("/")}>Home <BsFillHouseFill/></button>
+        <button onClick={() => navigate ("/admin/trips/create")}>Criar Viagem</button>
+        <button>Logout</button>
+      </div>
+    </>
+  )
 }
-
-
 
 export default AdminHomePage;

@@ -1,10 +1,13 @@
-const TripDetailsPage = () => {
-    return (
-        <div>
-            <h1>Trip</h1>
-        </div>
+import React from 'react'
+import { useNavigate } from 'react-router-dom';
 
-    );
-};
+const TripDetailsPage = () => {
+    const navigate = useNavigate();
+  return(
+    <>
+    <p>Detalhes</p>
+    </>
+  );
+}
 
 export default TripDetailsPage;

@@ -1,9 +1,13 @@
+import { useNavigate } from 'react-router-dom'
+
 const ErrorPage = () => {
-    return (
-        <div>
-            <h1>Pagina nao encontrada</h1>
-        </div>
-    );
-};
+  const navigate = useNavigate();
+
+  return (
+    <>
+      <h1 onClick={() => navigate('/')}>Página não encontrada!!</h1>
+    </>
+  );
+}
 
 export default ErrorPage;
