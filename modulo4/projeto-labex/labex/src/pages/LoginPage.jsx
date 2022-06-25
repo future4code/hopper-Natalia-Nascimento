@@ -3,6 +3,8 @@ import { useNavigate } from 'react-router-dom'
 import {BsFillHouseFill} from "react-icons/bs"
 import {IoIosLogIn} from "react-icons/io"
 import styled from 'styled-components'
+import { useState } from 'react'
+import axios from 'axios'
 
 const Div = styled.div`
   display: flex;
@@ -15,21 +17,23 @@ const Div = styled.div`
   height: 100vh;
 `;
 
-const H1 = styled.h1`
+const Header = styled.header`
   display: flex;
+  position: absolute;
+  padding-bottom: 430px;
+  padding-left: 15px;
   align-items: center;
-  padding-top:50px;
   color: white;
 `;
 
 const Form = styled.form`
-  display: flex;
   align-items: center;
   justify-items:center;
   justify-content: center;
-  flex-direction:column;
 
   input{
+    display: flex;
+    flex-direction:column;
     background-color: #d6d0d0;
     height: 3vh;
     width: 20vw;
@@ -39,7 +43,12 @@ const Form = styled.form`
   }
 `;
 
-const Button = styled.button`  
+const DivFilho = styled.div`  
+  display: flex;
+  flex-direction: row;
+  
+
+  button{
   position: relative;
   border-color: white;
   border-radius: 10em;
@@ -61,29 +70,69 @@ const Button = styled.button`
     :hover {
      box-shadow: 0 0 10px 0 white inset, 0 0 10px 4px white;
     }
+  }
 `;
 
 const LoginPage = () => {
-  const navigate = useNavigate()
+  const [email, setEmail] = useState("");
+  const [password, setPassoword] = useState("");
+  const navigate = useNavigate();
+
+  const onChangeEmail = (event) => {
+    setEmail(event.target.value);
+  }
+
+  const onChangePassword = (event) => {
+    setPassoword(event.target.value);
+  }
+
+  const onSubmitLogin = () => {
+    const url = 'https://us-central1-labenu-apis.cloudfunctions.net/labeX/natalia-nascimento-hopper/login';
+    const headers = {"Content-Type":"application/json"};
+    const body = {
+        "email": email,
+        "password": password
+    };
+
+    axios
+    .post(url, body, {headers})
+    .then((res) => {
+        localStorage.setItem("token", res.data.token);
+        navigate("/admin/trips/:id");
+    })
+    .catch((error) => {
+        console.log(error.response.data);
+        alert("Por favor, digite seu email e senha!");
+    });
+  };
+
   return (
     <Div>
-      <H1>Fazer login</H1>
+      <Header>
+      <h1>Fazer login</h1>
+      </Header>
       <Form>
         <input
-          placeholder={'E-mail'}
-          type={'email'}
-          value=""
-          onChange=""
+          placeholder={"E-mail"}
+          type={"email"}
+          onChange={onChangeEmail}
+          value={email}
+          required
         /><br/>
         <input
-          placeholder={'Senha'}
-          type={'password'}
-          value=""
-          onChange=""
+          placeholder={"Senha"}
+          type={"password"}
+          value={password}
+          onChange={onChangePassword}
+          required
+          pattern="^.{6,}$"
+          title="Sua senha deve ter no mínimo 6 caracteres"
           /><br/>
-      </Form>
-      <Button onClick={() => navigate("/")}>Home <BsFillHouseFill/></Button>
-      <Button type="submit" value="Enviar" onClick={() => navigate ("/admin/trips/create")}>Entrar <IoIosLogIn/></Button>
+      </Form>    
+      <DivFilho>
+          <button onClick={() => navigate("/")}>Home <BsFillHouseFill/></button>
+          <button onClick={onSubmitLogin} type='submit'> Entrar <IoIosLogIn/></button>
+       </DivFilho>  
     </Div>
   );
 }

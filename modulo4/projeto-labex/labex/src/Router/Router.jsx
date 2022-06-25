@@ -5,7 +5,7 @@ import ApplicationFormPage from "../pages/ApplicationFormPage";
 import LoginPage from "../pages/LoginPage";
 import AdminHomePage from "../pages/AdminHomePage";
 import CreateTripPage from "../pages/CreateTripPage"
-import Profile from "../pages/Profile";
+// import Profile from "../pages/Profile";
 import ErrorPage from "../pages/ErrorPage"
 import TripDetailsPage  from "../pages/TripDetailsPage";
 
