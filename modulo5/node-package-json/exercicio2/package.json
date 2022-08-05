@@ -1,0 +1,13 @@
+{
+  "name": "exercicio2",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "scripts": {
+    "start": "node ./index.js",
+    "calculadora": "clear && node index.js 2 2 10 2 50 2 100 2"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
