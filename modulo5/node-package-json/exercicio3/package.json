@@ -1,0 +1,13 @@
+{
+  "name": "exercicio3",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "scripts": {
+    "start": "node ./index.js",
+    "tarefas-casa": "clear && node index.js Lavar a louça  Comprar Leite"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

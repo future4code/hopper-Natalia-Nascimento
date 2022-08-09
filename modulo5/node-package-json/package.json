@@ -1,0 +1,15 @@
+{
+  "name": "modulo5",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node ./index.js",
+    "calculadora": "clear && node index.js 2 2 10 2 50 2 100 2",
+    "tarefas-casa": "clear && node index.js Lavar a louça  Comprar Leite"
+  },
+  "keywords": [],
+  "author": "Natalia Amorim",
+  "license": "ISC",
+  "description": ""
+}
