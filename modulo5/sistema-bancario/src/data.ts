@@ -1,6 +1,6 @@
 export type User = {
     nome: string,
-    cpf: string,
+    cpf: number,
     dataDeNascimento: string,
     saldo: number,
     extratoDados: extrato[]
@@ -18,7 +18,7 @@ export type extrato = {
 export let users: User []= [
     {
         nome: "Anita Larissa",
-        cpf: "123.456.789-10",
+        cpf: 12345678910,
         dataDeNascimento: "30/11/1993",
         saldo: 560,
         extratoDados: []
@@ -26,7 +26,7 @@ export let users: User []= [
 
     {
         nome: "John Winston Ono Lennon",
-        cpf: "111.213.141-51",
+        cpf: 11121314151,
         dataDeNascimento: "09/10/1949",
         saldo: 1060,
         extratoDados: [
@@ -44,7 +44,7 @@ export let users: User []= [
     },
   {
     nome: "Fernanda Brum Costa da Cruz",
-    cpf: "617.181.920-21",
+    cpf: 617.18192021,
     dataDeNascimento: "19/12/1972",
     saldo: 3068,
     extratoDados: [
@@ -62,3 +62,49 @@ export let users: User []= [
   },
     
 ]
+
+export const RealizarDeposito = (
+    cpf: number,
+    valor: number,
+    dataDeTransação: string, 
+    descricao: string
+) => {
+    users = users.map((conta) => {
+        if(conta.cpf === cpf){
+            conta.extratoDados.push({
+                valor,
+                dataDeTransação,
+                descricao
+            })
+            return {
+                ...conta,
+                saldo: conta.saldo + valor
+            }
+        }else{
+            return conta
+        }
+    })
+}
+
+export const RealizarPagamentos = (
+    cpf: number,
+    valor: number,
+    dataDeTransação: string, 
+    descricao: string
+) => {
+    users = users.map((conta) => {
+        if(conta.cpf === cpf){
+            conta.extratoDados.push({
+                valor,
+                dataDeTransação,
+                descricao
+            })
+            return {
+                ...conta,
+                saldo: conta.saldo - valor
+            }
+        }else{
+            return conta
+        }
+    })
+}
