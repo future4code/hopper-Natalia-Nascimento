@@ -4,9 +4,8 @@
   "main": "index.js",
   "scripts": {
     "start": "tsc && node ./build/index.js",
-    "dev-start": "ts-node-dev ./src/index.ts",
-    "migrations": "tsc && node .database/build/index.js"
-  
+    "dev-start": "ts-node-dev ./src/index.ts"
+    
   },
   "author": "Labenu",
   "license": "ISC",
