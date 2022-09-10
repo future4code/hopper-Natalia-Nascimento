@@ -1,0 +1,17 @@
+
+
+Projeto 
+
+[x] - Criar usuário;
+[x] - Pegar usuário pelo id;
+[x] - Editar usuário;
+[x] - Criar tarefa;
+[x] - Pegar tarefa pelo id;
+[x] - Pegar todos os usuários;
+[x] - Pegar tarefas criadas por um usuário;
+[x] - Pesquisar usuário;
+
+
+API criada, porem rodando no VSCCODE, exceto algumas na POSTMAN que nao roda - DOCUMENTAÇÃO API
+
+https://documenter.getpostman.com/view/21026477/VVkB7vnW
