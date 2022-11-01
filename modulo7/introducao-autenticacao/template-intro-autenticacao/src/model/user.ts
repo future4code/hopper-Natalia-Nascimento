@@ -1,3 +1,5 @@
+import { type } from "os"
+
 export type user = {
    id: string
    email: string
@@ -22,5 +24,8 @@ export interface EditUserInputDTO {
 export interface EditUserInput {
    name: string,
    nickname: string,
+   id: string
+}
+export type AuthenticationData = {
    id: string
 }

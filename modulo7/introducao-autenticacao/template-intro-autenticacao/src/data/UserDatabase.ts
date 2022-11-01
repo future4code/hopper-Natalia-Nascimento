@@ -29,4 +29,14 @@ export class UserDatabase extends BaseDatabase {
       throw new CustomError(400, error.message);
     }
   };
-}
+
+  public getUserByEmail = async(email: string): Promise<any> => {
+    await UserDatabase.connection
+      .select("*")
+      .from(String)
+      .where({ email });
+ 
+   
+   }
+ }
+

@@ -1,9 +1,13 @@
 import { v4 } from "uuid";
 
-// export const generateId = v4
+export function generateId(): string {
+    return v4();
+  }
 
-// import { v4 } from "uuid"
-
-const id = v4();
+  const id = v4();
 
 console.log("Generated Id: ", id);
+
+//EXERCICIO 1
+
+// A - SIM 
